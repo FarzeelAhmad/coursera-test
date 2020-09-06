@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:gray;
+	font-size:130%;
+}
+h2{
+	color:maron;
+}
+.secHead{
+	text-align:center;
+}
