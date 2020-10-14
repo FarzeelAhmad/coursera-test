@@ -41,10 +41,14 @@ p{
 	border: 2px solid black;
 }
 .box{
-	margin: 10px;
+	padding: 10px;
+	box-sizing:border-box;
+}
+.inBox{
 	border: 2px solid black;
 	background-color:#999;
-	box-sizing:border-box;
+	height:100%;
+	float:left;
 }
 @media(min-width:992px){
 	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
@@ -60,7 +64,7 @@ p{
 		width: 25%;
 	}
 	.col-lg-4{
-		width: 31.33%;
+		width: 33.33%;
 	}
 	.col-lg-5{
 		width: 41.66%;
@@ -107,7 +111,7 @@ p{
 		width: 41.66%;
 	}
 	.col-md-6{
-		width: 47%;
+		width: 50%;
 	}
 	.col-md-7{
 		width: 58.33%;
@@ -125,7 +129,7 @@ p{
 		width: 92.66%;
 	}
 	.col-md-12{
-		width: 97%;
+		width: 100%;
 	}
 }
 @media (max-width : 767px){
@@ -166,7 +170,7 @@ p{
 		width: 92.66%;
 	}
 	.col-sm-12{
-		width: 97%;
+		width: 100%;
 	}
 }
 </style>
@@ -176,16 +180,22 @@ p{
 <header>Our Menu</header>
 <div class="container">
 <div class="box col-lg-4 col-md-6 col-sm-12">
+	<div class="inBox">
 	<div class="item" style="background-color:#F99"><b>Chicken</b></div>
 	<p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
 </div>
 <div class="box col-lg-4 col-md-6 col-sm-12">
+	<div class="inBox">
 	<div class="item" style="background-color:#C66; color:#FFF"><b>Beef</b></div>
 	<p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
 </div>
 <div class="box col-lg-4 col-md-12 col-sm-12">
+	<div class="inBox">
 	<div class="item" style="background-color:#FC6"><b>Sushi</b></div>
 	<p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
 </div>
 </div>
 </body>
